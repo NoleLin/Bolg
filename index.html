@@ -209,13 +209,16 @@
 </ul>
 <p></p><h3 id="2">反射的使用</h3><p></p>
 <ul>
-<li><p></p><h4 id="2_1">实例化Class对象</h4><br>  1.Object类中存在一个getClass()方法:public final Class&lt;?&gt; getClass()<p></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class clazz=new String().getClass();</span><br></pre></td></tr></table></figure>
-<p>  2.利用”包.class”的形式实例化Class,相对第一种方式少了对象的创建(不需要得到指定类的实例化对象)。</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class clazz=String.class;</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>public static Class&lt;?&gt; forName(String className)<pre><code>throws ClassNotFoundException(这种更好点)
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class clazz=Class.forName(&quot;java.lang.String&quot;);</span><br></pre></td></tr></table></figure>
+<li><p></p><h4 id="2_1">实例化Class对象</h4><p></p>
+<ol>
+<li><p>Object类中存在一个getClass()方法:public final Class&lt;?&gt; getClass()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class clazz=new String().getClass();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用”包.class”的形式实例化Class,相对第一种方式少了对象的创建(不需要得到指定类的实例化对象)。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class clazz=String.class;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>public static Class&lt;?&gt; forName(String className) throws ClassNotFoundException(这种更好点)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class clazz=Class.forName(&quot;java.lang.String&quot;);</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
@@ -616,11 +619,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
             
             <div class="clearfix"></div>
